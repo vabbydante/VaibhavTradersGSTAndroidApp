@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <group android:checkableBehavior="single">
+
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home"
@@ -22,9 +24,11 @@
         android:id="@+id/nav_help"
         android:icon="@drawable/ic_help"
         android:title="@string/help"/>
+    </group>
 
     <item android:title="@string/tables">
         <menu>
+            <group android:checkableBehavior="single">
             <item
                 android:id="@+id/nav_countries"
                 android:icon="@drawable/ic_countries"
@@ -49,16 +53,19 @@
                 android:id="@+id/nav_states"
                 android:icon="@drawable/ic_states"
                 android:title="@string/states"/>
+            </group>
         </menu>
     </item>
 
 <item android:title="Logout">
     <menu>
+        <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_logout"
             android:title="Logout"
             />
+        </group>
     </menu>
 </item>
 
