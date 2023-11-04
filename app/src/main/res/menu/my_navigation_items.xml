@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"/>
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/help"/>
+
+    <item android:title="@string/tables">
+        <menu>
+            <item
+                android:id="@+id/nav_countries"
+                android:icon="@drawable/ic_countries"
+                android:title="@string/countries"/>
+
+            <item
+                android:id="@+id/nav_customers"
+                android:icon="@drawable/ic_customer"
+                android:title="@string/customers"/>
+
+            <item
+                android:id="@+id/nav_deliverymodes"
+                android:icon="@drawable/ic_deliverymode"
+                android:title="@string/delivery_modes"/>
+
+            <item
+                android:id="@+id/nav_products"
+                android:icon="@drawable/ic_products"
+                android:title="@string/products"/>
+
+            <item
+                android:id="@+id/nav_states"
+                android:icon="@drawable/ic_states"
+                android:title="@string/states"/>
+        </menu>
+    </item>
+
+<item android:title="Logout">
+    <menu>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout"
+            />
+    </menu>
+</item>
+
+
+</menu>
