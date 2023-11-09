@@ -19,63 +19,63 @@ import retrofit2.http.Path;
 public interface VaibhavTradersAndroidAppApi {
     // Products
     @POST("/products/add")
-    Call<ResponseObject> createProduct(@Body Product product);
+    Call<Product> createProduct(@Body Product product);
 
     @GET("/products/findall")
     Call<ResponseObject> findAllProducts();
 
     @POST("/products/deleteproduct")
-    Call<ResponseObject> deleteProduct(@Body Product product);
+    Call<Product> deleteProduct(@Body Product product);
 
     // Customers
     @POST("/customers/add")
-    Call<ResponseObject> createCustomer(@Body Customer customer);
+    Call<Customer> createCustomer(@Body Customer customer);
 
     @GET("/customers/findall")
     Call<ResponseObject> findAllCustomers();
 
     @POST("/customers/deletecustomer")
-    Call<ResponseObject> deleteCustomer(@Body Customer customer);
+    Call<Customer> deleteCustomer(@Body Customer customer);
 
     // Countries
     @POST("/countries/add")
-    Call<ResponseObject> createCountry(@Body Country country);
+    Call<Country> createCountry(@Body Country country);
 
     @GET("/countries/findall")
     Call<ResponseObject> findAllCountries();
 
     @POST("/countries/deletecountry")
-    Call<ResponseObject> deleteCountry(@Body Country country);
+    Call<Country> deleteCountry(@Body Country country);
 
     // Delivery Modes
     @POST("/deliverymodes/add")
-    Call<ResponseObject> createDeliveryMode(@Body DeliveryMode deliveryMode);
+    Call<DeliveryMode> createDeliveryMode(@Body DeliveryMode deliveryMode);
 
     @GET("/deliverymodes/findall")
     Call<ResponseObject> findAllDeliveryModes();
 
     @POST("/deliverymodes/deletedeliverymode")
-    Call<ResponseObject> deleteCountry(@Body DeliveryMode deliveryMode);
+    Call<DeliveryMode> deleteDeliveryMode(@Body DeliveryMode deliveryMode);
 
     // States
     @POST("/states/add")
-    Call<ResponseObject> createState(@Body State state);
+    Call<State> createState(@Body State state);
 
     @GET("/states/findall")
     Call<ResponseObject> findAllStates();
 
     @POST("/states/deletestate")
-    Call<ResponseObject> deleteState(@Body State state);
+    Call<State> deleteState(@Body State state);
 
     // Invoice
     @POST("/invoice/createInvoice")
-    Call<ResponseObject> createInvoice(@Body InvoiceCreationUpdationRequest invoiceCreationUpdationRequest);
+    Call<InvoiceCreationUpdationRequest> createInvoice(@Body InvoiceCreationUpdationRequest invoiceCreationUpdationRequest);
 
     @POST("/invoice/updateInvoice")
-    Call<ResponseObject> updateInvoice(@Body InvoiceCreationUpdationRequest invoiceCreationUpdationRequest);
+    Call<InvoiceCreationUpdationRequest> updateInvoice(@Body InvoiceCreationUpdationRequest invoiceCreationUpdationRequest);
 
     @POST("/invoice/deleteInvoice")
-    Call<ResponseObject> deleteInvoice(@Body Invoice invoice);
+    Call<Invoice> deleteInvoice(@Body Invoice invoice);
 
     @GET("/invoice")
     Call<ResponseObject> findInvoiceById(@Body Long invoiceId);
