@@ -17,6 +17,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ProductForm"
+            android:exported="false" />
+        <activity
             android:name=".StateForm"
             android:exported="false" />
         <activity

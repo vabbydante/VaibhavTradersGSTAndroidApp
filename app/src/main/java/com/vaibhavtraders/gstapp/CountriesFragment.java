@@ -119,7 +119,7 @@ public class CountriesFragment extends Fragment {
 
                     @Override
                     public void onFailure(Call<ResponseObject> call, Throwable t) {
-                        Toast.makeText(getContext(), "Error while fetching Country List", Toast.LENGTH_LONG).show();
+                        Toast.makeText(requireContext(), "Error while fetching Country List", Toast.LENGTH_LONG).show();
                         Logger.getLogger(requireContext().getClass().getName()).log(Level.SEVERE, "Error in loadCountries()", t);
                     }
                 });
