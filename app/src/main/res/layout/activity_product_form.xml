@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ProductForm">
 
+    <EditText
+        android:id="@+id/et_product_name"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Product Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="0dp"
@@ -20,33 +34,6 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/et_product_name"
-        android:layout_width="248dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="4dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="Product Name"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:text="Enter Description"
-        app:layout_constraintBottom_toBottomOf="@+id/et_product_desc"
-        app:layout_constraintEnd_toStartOf="@+id/et_product_name"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et_product_desc"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
         android:id="@+id/et_product_desc"
         android:layout_width="248dp"
         android:layout_height="46dp"
@@ -58,7 +45,280 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Enter Description"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_desc"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_product_desc"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_product_hsn"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Product HSN/HAC Code"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Enter HSN/HAC"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_hsn"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_hsn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_product_hsn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_product_uom"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="UOM"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Stock"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_stock"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_stock"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_product_uom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_product_stock"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Stock"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="UOM"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_uom"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_uom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_product_hsn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_product_gstpercentage"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="GST Percent"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="GST Percent"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_gstpercentage"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_gstpercentage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_product_stock"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_product_cesspercentage"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="CESS Percent"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="CESS Percent"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_cesspercentage"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_cesspercentage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_product_gstpercentage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_product_cessamount"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="CESS Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="CESS Amount"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_cessamount"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_cessamount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_product_cesspercentage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_product_sellprice"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Sell Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Sell Price"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_sellprice"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_sellprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_product_cessamount"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_product_sellpriceincltax"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Sell Price with Tax"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Sell Price incl. Tax"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_sellpriceincltax"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_sellpriceincltax"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_product_sellprice"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_product_purchaseprice"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Purchase Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Purchase Price"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_purchaseprice"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_purchaseprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_product_sellpriceincltax"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_product_purchasepriceincltax"
+        android:layout_width="248dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Purchase Price with Tax"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Purchase Price incl. Tax"
+        app:layout_constraintBottom_toBottomOf="@+id/et_product_purchasepriceincltax"
+        app:layout_constraintEnd_toStartOf="@+id/et_product_purchaseprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_product_purchasepriceincltax"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_save_product"
@@ -80,6 +340,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/btn_save_product"
         app:layout_constraintEnd_toEndOf="@+id/btn_save_product"
         app:layout_constraintStart_toStartOf="@+id/btn_save_product"
-        app:layout_constraintTop_toTopOf="@+id/btn_save_product" />
+        app:layout_constraintTop_toTopOf="@+id/btn_save_product"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
