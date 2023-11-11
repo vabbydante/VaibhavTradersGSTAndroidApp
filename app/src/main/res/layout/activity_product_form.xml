@@ -104,7 +104,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="Stock"
+        android:text="Enter Stock"
         app:layout_constraintBottom_toBottomOf="@+id/et_product_stock"
         app:layout_constraintEnd_toStartOf="@+id/et_product_stock"
         app:layout_constraintHorizontal_bias="0.0"

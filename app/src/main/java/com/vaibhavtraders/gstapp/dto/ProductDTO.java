@@ -18,6 +18,28 @@ public class ProductDTO {
     private Double purchasePrice;
     private Double purchasePriceIncludingTax;
     private String productImage;
+    private boolean expandable;
+
+    public ProductDTO(Long productID, String name, String productDescription, String hsnHacCode, String unitOfMeasurement, Integer stock, ProductType productType, Double gstPercentage, Double cessPercentage, Double cessAmount, Double sellPrice, Double sellPriceIncludingTax, Double purchasePrice, Double purchasePriceIncludingTax, String productImage, boolean expandable) {
+        this.productID = productID;
+        this.name = name;
+        this.productDescription = productDescription;
+        this.hsnHacCode = hsnHacCode;
+        this.unitOfMeasurement = unitOfMeasurement;
+        this.stock = stock;
+        this.productType = productType;
+        this.gstPercentage = gstPercentage;
+        this.cessPercentage = cessPercentage;
+        this.cessAmount = cessAmount;
+        this.sellPrice = sellPrice;
+        this.sellPriceIncludingTax = sellPriceIncludingTax;
+        this.purchasePrice = purchasePrice;
+        this.purchasePriceIncludingTax = purchasePriceIncludingTax;
+        this.productImage = productImage;
+        this.expandable = false;
+    }
+
+
     public Long getProductID() {
         return productID;
     }
@@ -108,6 +130,15 @@ public class ProductDTO {
     public void setProductImage(String productImage) {
         this.productImage = productImage;
     }
+
+    public boolean isExpandable() {
+        return expandable;
+    }
+
+    public void setExpandable(boolean expandable) {
+        this.expandable = expandable;
+    }
+
     @Override
     public String toString() {
         return "ProductDTO [productID=" + productID + ", name=" + name + ", productDescription=" + productDescription
