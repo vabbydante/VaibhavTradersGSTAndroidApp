@@ -17,6 +17,6 @@ public class StateDTO {
     }
     @Override
     public String toString() {
-        return "StateDTO [stateID=" + stateID + ", stateName=" + stateName + "]";
+        return stateName;
     }
 }

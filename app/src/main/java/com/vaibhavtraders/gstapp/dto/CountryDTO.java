@@ -17,6 +17,6 @@ public class CountryDTO {
     }
     @Override
     public String toString() {
-        return "CountryDTO [countryID=" + countryID + ", countryName=" + countryName + "]";
+        return countryName;
     }
 }
