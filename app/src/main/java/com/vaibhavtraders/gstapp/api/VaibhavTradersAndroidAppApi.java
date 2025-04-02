@@ -18,23 +18,23 @@ import retrofit2.http.Path;
 
 public interface VaibhavTradersAndroidAppApi {
     // Products
-    @POST("/products/add")
+    @POST("/products/add.vt")
     Call<Product> createProduct(@Body Product product);
 
-    @GET("/products/findall")
+    @GET("/products/findall.vt")
     Call<ResponseObject> findAllProducts();
 
-    @POST("/products/deleteproduct")
+    @POST("/products/deleteproduct.vt")
     Call<Product> deleteProduct(@Body Product product);
 
     // Customers
-    @POST("/customers/add")
+    @POST("/customers/add.vt")
     Call<Customer> createCustomer(@Body Customer customer);
 
-    @GET("/customers/findall")
+    @GET("/customers/findall.vt")
     Call<ResponseObject> findAllCustomers();
 
-    @POST("/customers/deletecustomer")
+    @POST("/customers/deletecustomer.vt")
     Call<Customer> deleteCustomer(@Body Customer customer);
 
     // Countries
